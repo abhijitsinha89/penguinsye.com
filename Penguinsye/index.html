@@ -1,0 +1,127 @@
+<html>
+<head>
+    <title data-ng-bind="title" class="ng-binding">Penguins Ye!</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="fragment" content="!">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="http://cloud.typography.com/7650852/788402/css/fonts.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <base href="/">
+    <style>
+
+        html, body {
+              font-family: 'Gotham Rounded SSm A', 'Gotham Rounded SSm B';
+              color : #616161;
+        }
+        @keyframes sonarEffect {
+        0% {
+            box-shadow: 0 0 4px rgba(255,255,255,0), 0 3px 4px #333, 0 0 4px rgba(255,255,255,0);
+            opacity: 0.5;
+        }
+
+        50% {
+            box-shadow: 0 0 4px rgba(255,255,255,0.1), 0 3px 4px #333 , 0 0 4px rgba(255,255,255,0.1);
+            opacity: 0.9;
+            transform:scale(1.1);
+        }
+
+        100% {
+             opacity: 0.5;
+             box-shadow: 0 0 4px rgba(255,255,255,0),0 3px 4px #333, 0 0 4px rgba(255,255,255,0);
+        }
+    }
+
+    @keyframes pendulam {
+         0% {
+                   transform: rotate(7deg);
+        }
+
+        50% {
+                    transform: rotate(-7deg);
+        }
+
+        100% {
+                     transform: rotate(7deg);
+        }
+    }
+
+
+.logo {
+    margin : 40px 0;
+    display: inline-block;
+    padding: 15px 5%;
+    border-radius: 50%;
+    -webkit-transform: scale(0.93);
+    -moz-transform: scale(0.93);
+    -ms-transform: scale(0.93);
+    transform: scale(0.93);
+    margin-left: calc(50% - 140px);
+    background-color: #FFF59D;
+        animation: pendulam 3s ease-in infinite;
+}
+
+.logo:after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    content: '';
+    top: 0;
+    left: 0;
+    padding: 15px 5%;
+    z-index: -1;
+    box-shadow: 0 0 0 4px rgba(255,255,255,0.1);
+    opacity: 0.1;
+    background-color: #F4511E;
+    animation: sonarEffect 3s ease-in infinite;
+   
+}
+
+.site-title {
+  color: #D81B60;
+  font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+  margin-left: 10px;
+  font-size: 1.8em;
+}
+
+#footer {
+    width : 100%;
+    height : 40px;
+    background-color: #616161;
+    position: relative;
+    bottom: 0;
+}
+
+    </style>
+</head>
+<body>
+          <h2 class="site-title">Penguins Ye!</h2>
+          <hr  style="  border: 1px solid #f0f0f0;" />
+    <div class="container">
+<h1 class="text-center" style="font-size:4em;">Coming Soon..</h1>
+        <div class="row" style="margin-bottom : 40px">
+            <div class="col-md-12">
+                 <div class="logo">
+        <img src="C:/Users/Abhijit/Desktop/penguin.png" />
+      </div>
+                            <p class="lead">We want to know about a story, the curiosity inside all of us takes us somewhere we never thought we could go. Each of has a story and every story is connected to each one of us.</p>
+            <em class="text-center" style="display : block">Like we believe - The journey of one is the journey of all</em>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+      <p class="text-center" style="color : #fff">© 2015 Penguins Ye</p>
+    </div>
+</body>
+</html>
